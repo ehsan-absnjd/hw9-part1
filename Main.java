@@ -33,11 +33,14 @@ public class Main {
         print(result);
     }
     public static void printCummon(TreeSet<Character> treeSet1 , TreeSet<Character> treeSet2){
-        TreeSet<Character> result = new TreeSet<>();
-        for (char c : treeSet1){
-            if(treeSet2.contains(c))
-                result.add(c);
-        }
+        TreeSet<Character> result = new TreeSet<>(treeSet1);
+        result.retainAll(treeSet2);
         print(result);
+        return;
+//        for (char c : treeSet1){
+//            if(treeSet2.contains(c))
+//                result.add(c);
+//        }
+//        print(result);
     }
 }
