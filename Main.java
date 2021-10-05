@@ -11,6 +11,7 @@ public class Main {
         initialize(treeSet2);
         print(treeSet1);
         print(treeSet2);
+        printUnion(treeSet1,treeSet2);
         printCummon(treeSet1,treeSet2);
 
     }
